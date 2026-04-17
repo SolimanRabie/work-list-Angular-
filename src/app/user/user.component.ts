@@ -10,11 +10,17 @@ import {
 } from '@angular/core';
 import { DUMMY_USERS } from '../dummy-users';
 
-type User = {
+// type User = {
+//   id: string;
+//   avatar: string;
+//   name: string;
+// };
+
+interface User {
   id: string;
   avatar: string;
   name: string;
-};
+}
 
 const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
 
