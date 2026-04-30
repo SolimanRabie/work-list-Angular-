@@ -24,4 +24,4 @@ export class AppComponent {
   }
 }
 
-// make model files ,impliment dynamic css with class binding
+// run add task feature and applying two way binding on input field
