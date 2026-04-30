@@ -1,9 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { type Task } from './task.model'; // type here describe that Task is type definition
+import { DatePipe } from '@angular/common';
+import { CardComponent } from '../../shared/card/card.component';
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [],
+  imports: [CardComponent, DatePipe],
   templateUrl: './task.component.html',
   styleUrl: './task.component.css',
 })
