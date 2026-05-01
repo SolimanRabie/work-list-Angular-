@@ -1,27 +1,144 @@
-# Essentials
+# 📝 Work List Management App (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+A simple multi-user work list management application built with Angular.
+This app allows users to manage tasks efficiently with persistent storage.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🌐 Live Demo
 
-## Code scaffolding
+👉 https://work-list-angular-qxtbk9370-solimanrabies-projects.vercel.app/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Features
 
-## Build
+- 👤 Select a user
+- 📋 View user-specific tasks
+- ➕ Add new tasks
+- ✅ Mark tasks as completed (remove)
+- 💾 Save tasks in **localStorage**
+- 🔄 Real-time UI updates
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🛠️ Tech Stack
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular (Standalone Components)**
+- **TypeScript**
+- **HTML / CSS**
+- **Angular Signals**
+- **Services (Dependency Injection)**
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📂 Project Structure
 
-## Further help
+```
+src/
+│
+├── app/
+│   ├── header/
+│   ├── user/
+│   ├── tasks/
+│   │   ├── task/
+│   │   ├── new-task/
+│   │   ├── tasks.service.ts
+│   │
+│   ├── shared/
+│   │   ├── card/
+│   │
+│   ├── app.component.ts
+│
+└── assets/
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/SolimanRabie/work-list-Angular-.git
+cd your-repo
+npm install
+ng serve
+```
+
+Then open:
+
+```
+http://localhost:4200
+```
+
+---
+
+## 🧠 Key Concepts Used
+
+### 1. Dependency Injection
+
+```ts
+private tasksService = inject(TasksService);
+```
+
+---
+
+### 2. State Management via Service
+
+- Centralized task handling
+- Clean separation of concerns
+
+---
+
+### 3. Local Storage Persistence
+
+```ts
+localStorage.setItem("tasks", JSON.stringify(this.tasks));
+```
+
+---
+
+### 4. Component Communication
+
+- `@Input()` for passing data
+- `@Output()` for emitting events
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+![Home](/screenShootes/HomePage.PNG)
+
+### ➕ Add Task
+
+![Add Task](/screenShootes/AddTask.PNG)
+
+### ✅ Task List
+
+![Tasks](/screenShootes/viewTask.PNG)
+
+### ✅ Tasks Completed
+
+## ![Completed](/screenShootes/completTask.PNG)
+
+## 🔮 Future Improvements
+
+- ✏️ Edit tasks
+- 🔍 Search & filter
+- 📊 Task status (Done / Pending)
+- 🌐 Backend integration (API)
+- 🔐 Authentication
+
+---
+
+## 👨‍💻 Author
+
+**Soliman Rabie**
+
+- LinkedIn: [www.linkedin.com/in/soliman-rabie-017b401b8]
+- GitHub: [https://github.com/SolimanRabie]
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
